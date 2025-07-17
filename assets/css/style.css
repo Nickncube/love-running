@@ -1,3 +1,25 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Oswald:wght@200..700&display=swap');
+
+
+/*Atrisk wildcard selector to override default styles added by the browser */
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+/*general styles*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*Generic project styles*/
+    color: black;
+}
+
+  
+
 /*header*/
 header {
 background-color: brown;
@@ -7,6 +29,8 @@ background-color: brown;
 /*main*/
 main {
 background-color: blue;
+/*Make main element take up any surplus space to push footer down */
+flex: 1 0 auto; 
 }
 
 /*footer*/
