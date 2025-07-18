@@ -4,9 +4,9 @@
 
 /*Atrisk wildcard selector to override default styles added by the browser */
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /*general styles*/
@@ -19,16 +19,16 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-  
+
 
 /*header*/
 header {
-background-color: #ffffff;
-padding: 0 1rem;
- position: fixed;
- z-index: 99;
- width: 100%;
- box-shadow: 0 2px 2px #3a3a3a;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -49,8 +49,9 @@ header h1 {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-    list-style-type: none; 
+    list-style-type: none;
 }
+
 #menu {
     margin-bottom: 1em;
 }
@@ -61,34 +62,40 @@ header h1 {
 
 /*navbar styles with dropdown toggle*/
 nav {
-    position: absolute; 
+    position: absolute;
     background-color: #ffffff;
     width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
-    display: none; /* Hide the nav by default */
-    top:100%; /* Position it below the header */
+    display: none;
+    /* Hide the nav by default */
+    top: 100%;
+    /* Position it below the header */
 }
 
 /* Toggle the display of the nav when the checkbox is checked */
 #nav-toggle:checked~nav {
-    display: block; /* Show the nav when the checkbox is checked */
+    display: block;
+    /* Show the nav when the checkbox is checked */
 }
 
 #nav-toggle {
-    display: none; /* Hide the checkbox */
+    display: none;
+    /* Hide the checkbox */
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
 
 /*main content */
 main {
-background-color: lightblue;
-/*Make main element take up any surplus space to push footer down */
-flex: 1 0 auto; 
-margin-top: 47px; /* Adjusted to account for the header height */
+    background-color: lightblue;
+    /*Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 47px;
+    /* Adjusted to account for the header height */
 }
 
 /*footer*/
@@ -100,4 +107,32 @@ footer {
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
 
+}
+
+/*meadia query: tablets and laerger screens (768px and up) */
+@media (min-width: 768px) {
+
+    /*header*/
+    nav {
+        display: block;
+        /* Show the nav on larger screens */
+        position: relative; /* Position relative to the header */
+        box-shadow: none;
+        /* Remove shadow for larger screens */
+        width: fit-content; /* Fit the width to the content */
+        padding-right: 1rem; /* Add padding to the right */
+
+    }
+    #menu {
+        display: flex;
+    
+    }
+    #menu li {
+        padding-left: 1rem;
+    }
+
+    #nav-toggle {
+        display: none;
+        /* Hide the checkbox on larger screens */
+    }
 }
