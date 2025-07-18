@@ -1,27 +1,23 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Oswald:wght@200..700&display=swap');
 
-
-/*Atrisk wildcard selector to override default styles added by the browser */
+/* Reset styles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/*general styles*/
+/* General body styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /*Generic project styles*/
-    color: black;
     font-family: 'Lato', sans-serif;
+    color: black;
 }
 
-
-
-/*header*/
+/* Header */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -46,21 +42,20 @@ header h1 {
     color: #252525;
 }
 
+/* Navigation menu */
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
-}
-
-#menu {
     margin-bottom: 1em;
 }
 
+/* Active link underline */
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*navbar styles with dropdown toggle*/
+/* Nav dropdown styles */
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -69,72 +64,64 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-    /* Hide the nav by default */
     top: 100%;
-    /* Position it below the header */
 }
 
-/* Toggle the display of the nav when the checkbox is checked */
+/* Show nav when toggled */
 #nav-toggle:checked~nav {
     display: block;
-    /* Show the nav when the checkbox is checked */
 }
 
 #nav-toggle {
     display: none;
-    /* Hide the checkbox */
 }
 
 .nav-toggle-label {
     font-size: 2rem;
+    cursor: pointer;
 }
 
-/*main content */
+/* Main content */
 main {
     background-color: lightblue;
-    /*Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
-    /* Adjusted to account for the header height */
+    padding: 20px;
 }
 
-/*footer*/
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+}
+
 #social-networks {
     text-align: center;
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-
 }
 
 #social-networks li {
     font-size: 160%;
-    padding: 5%;
+}
+
+#social-networks i {
     color: #3a3a3a;
 }
 
-/*meadia query: tablets and laerger screens (768px and up) */
+/* Media query: tablets and larger */
 @media (min-width: 768px) {
-
-    /*header*/
     nav {
         display: block;
-        /* Show the nav on larger screens */
         position: relative;
-        /* Position relative to the header */
         box-shadow: none;
-        /* Remove shadow for larger screens */
         width: fit-content;
-        /* Fit the width to the content */
         padding-right: 1rem;
-        /* Add padding to the right */
-
     }
 
     #menu {
         display: flex;
-
     }
 
     #menu li {
@@ -143,27 +130,20 @@ main {
 
     #nav-toggle {
         display: none;
-        /* Hide the checkbox on larger screens */
+    }
+
+    .nav-toggle-label {
+        display: none !important;
+        /* Hides the burger icon on large screens */
     }
 
     #logo {
         font-size: 2rem;
-        /* Increase logo size on larger screens */
         line-height: 75px;
         margin: 0 0.5rem;
     }
 
-    /*main content */
     main {
         margin-top: 79px;
     }
-
-    /*large devices (laptops and desktops, 992px and up) */
-    @media (min-width: 992px) {
-        #menu a:hover {
-            border-bottom: 1px solid #3a3a3a;
-        }
-    }
-
-
 }
