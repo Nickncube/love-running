@@ -135,4 +135,15 @@ footer {
         display: none;
         /* Hide the checkbox on larger screens */
     }
+
+    #logo {
+        font-size: 2rem;
+        /* Increase logo size on larger screens */
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /*main content */
+    main {
+        margin-top: 79px;
 }
