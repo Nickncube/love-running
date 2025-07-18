@@ -116,17 +116,22 @@ footer {
     nav {
         display: block;
         /* Show the nav on larger screens */
-        position: relative; /* Position relative to the header */
+        position: relative;
+        /* Position relative to the header */
         box-shadow: none;
         /* Remove shadow for larger screens */
-        width: fit-content; /* Fit the width to the content */
-        padding-right: 1rem; /* Add padding to the right */
+        width: fit-content;
+        /* Fit the width to the content */
+        padding-right: 1rem;
+        /* Add padding to the right */
 
     }
+
     #menu {
         display: flex;
-    
+
     }
+
     #menu li {
         padding-left: 1rem;
     }
@@ -148,12 +153,12 @@ footer {
         margin-top: 79px;
     }
 
-/*large devices (laptops and desktops, 992px and up) */
+    /*large devices (laptops and desktops, 992px and up) */
     @media (min-width: 992px) {
-#menu a:hover{
-    border-bottom: 1px solid #3a3a3a;
-}
-}
- 
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
+        }
+    }
+
 
 }
