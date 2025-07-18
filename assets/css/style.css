@@ -29,20 +29,21 @@ padding: 0 1rem;
  z-index: 99;
  width: 100%;
  box-shadow: 0 2px 2px #3a3a3a;
- 
- headrer a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
     text-decoration: none;
     color: inherit;
-   
- }
+}
 
-h1 {
+header h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
-    
-  }
 }
 
 #menu {
@@ -61,8 +62,27 @@ h1 {
 /*navbar styles with dropdown toggle*/
 nav {
     position: absolute; 
-    background-color: ;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none; /* Hide the nav by default */
+    top:100%; /* Position it below the header */
 }
+
+/* Toggle the display of the nav when the checkbox is checked */
+#nav-toggle:checked~nav {
+    display: block; /* Show the nav when the checkbox is checked */
+}
+
+#nav-toggle {
+    display: none; /* Hide the checkbox */
+}
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 /*main*/
 main {
 background-color: blue;
