@@ -99,14 +99,19 @@ main {
 }
 
 /*footer*/
-footer {
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 
+}
+
+#social-networks li {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /*meadia query: tablets and laerger screens (768px and up) */
