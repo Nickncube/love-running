@@ -88,6 +88,13 @@ main {
     margin-top: 47px;
     padding: 20px;
 }
+/* Hero section */
+#hero{
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+}
+
 
 /* Footer */
 footer {
