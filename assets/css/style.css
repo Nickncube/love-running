@@ -120,27 +120,6 @@ main {
     
 }
 
-/* Footer */
-footer {
-    background-color: #f0f0f0;
-}
-
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-#social-networks li {
-    font-size: 160%;
-}
-
-#social-networks i {
-    color: #3a3a3a;
-}
-
 /* Reasons section */
 #reasons {
     width: 90%;
@@ -221,6 +200,39 @@ hr {
     line-height: 0;
 }
 
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks li {
+    font-size: 160%;
+}
+
+#social-networks i {
+    color: #3a3a3a;
+}
+
+/* Media query: large or landscape phots (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0px;
+
+      
+}
+
+}
+
+
 /* Media query: tablets and larger */
 @media (min-width: 768px) {
     nav {
@@ -282,6 +294,23 @@ hr {
     align-self: flex-end;
 }
 
+/* Gallery */
+#photos img {
+    column-count: 3;
+}
+
+/* Media query: laptops and desktops,992px and up */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
+    }
+
+}
 @media screen and (min-width: 1200px) {
     #benefits {
         display: flex;
