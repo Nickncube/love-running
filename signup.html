@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- Meta tags for search engines -->
-   <meta name="description" content="Sign up to join Love Running - Dublin's vibrant running community.">
-   <meta name="keywords" content="sign up, join running club, running membership, Dublin run">
+   <meta name="description" content="Sign up to join Love Running in Dublin. Get fit, feel strong, and make friends.">
+   <meta name="keywords" content="running, love running, sign up, fitness, Dublin, join club">
    <!-- Title -->
    <title>Love Running | Sign Up</title>
    <!-- Favicon -->
@@ -28,7 +29,6 @@
       <label for="nav-toggle" class="nav-toggle-label">
          <i class="fa-solid fa-bars"></i>
       </label>
-
       <nav>
          <ul id="menu">
             <li><a href="index.html">Home</a></li>
@@ -40,9 +40,44 @@
 
    <!-- Main content -->
    <main>
-      <section>
-         <h2>Sign Up</h2>
-         <p>This is the sign-up page. Content will go here.</p>
+      <section id="signup">
+         <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+            <h2><i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!</h2>
+
+            <!-- First Name -->
+            <label for="first-name">First Name</label>
+            <input type="text" name="first_name" id="first-name" class="text-input" required>
+            <br>
+
+            <!-- Last Name -->
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last_name" id="last-name" class="text-input" required>
+            <br>
+
+            <!-- Email Address -->
+            <label for="email-address">Email Address</label>
+            <input type="email" name="email_address" id="email-address" class="text-input" required>
+            <br>
+
+            <!-- Radio Buttons -->
+            <div class="radio-buttons">
+               <div>
+                  <label for="road">Road</label>
+                  <input type="radio" name="running_preference" id="road" value="road" required checked>
+               </div>
+               <div>
+                  <label for="trail">Trail</label>
+                  <input type="radio" name="running_preference" id="trail" value="trail" required>
+               </div>
+               <div>
+                  <label for="both">Both</label>
+                  <input type="radio" name="running_preference" id="both" value="both" required>
+               </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="join-button">Let's Run!</button>
+         </form>
       </section>
    </main>
 
@@ -50,26 +85,31 @@
    <footer>
       <ul id="social-networks">
          <li>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+               aria-label="Visit our Facebook page (opens in a new tab)">
                <i class="fa-brands fa-facebook"></i>
             </a>
          </li>
          <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+               aria-label="Visit our Instagram page (opens in a new tab)">
                <i class="fa-brands fa-square-instagram"></i>
             </a>
          </li>
          <li>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="Visit our TikTok page (opens in a new tab)">
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener"
+               aria-label="Visit our TikTok page (opens in a new tab)">
                <i class="fa-brands fa-tiktok"></i>
             </a>
          </li>
          <li>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube channel (opens in a new tab)">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+               aria-label="Visit our YouTube channel (opens in a new tab)">
                <i class="fa-brands fa-square-youtube"></i>
             </a>
          </li>
       </ul>
    </footer>
 </body>
+
 </html>
