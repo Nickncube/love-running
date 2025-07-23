@@ -211,6 +211,16 @@ hr {
     color: #fafafa;
 }
 
+/* Gallery section */
+#photos img{
+    width: 100;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /* Media query: tablets and larger */
 @media (min-width: 768px) {
     nav {
